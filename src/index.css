@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+.multiselect{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid #777;
+    min-height: 44px;
+    padding: 6px 6px;
+    border-radius: 4px;
+}
+
+.multiselect .multiselect_options-list-wrapper{
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 15em;
+    z-index: 100;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+.multiselect .multiselect_options-list-wrapper .multiselect_options-list-option{
+    padding: 10px 6px;
+    width: 100%;
+    transition: all;
+}
+
+.multiselect .multiselect_options-list-wrapper .multiselect_options-list-option:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.multiselect .multiselect_options-list-wrapper .multiselect_options-list-option.multiselect_options-list-option-selected{
+    background-color: rgb(230, 230, 230);
+}
+
+.multiselect .multiselect_options-not-found{
+    text-align: center;
+    width: 100%;
+    padding: 6px;
+}
+
+
+.multiselect .multiselect_options-list-wrapper.multiselect_options-list--show{
+    display: flex;
+}
+
+.multiselect .multiselect_options-list-wrapper.multiselect_options-list--hidden{
+    display: none;
+}
+
+.multiselect .multiselect_selected-options-wrapper{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.multiselect .multiselect_selected-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgb(230, 230, 230);
+}
+
+.multiselect .multiselect_selected-options .multiselect_selected-options-text{
+    padding: 6px;
+}
+
+
+.multiselect .multiselect_selected-options .multiselect_selected-options-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all;
+    padding: 6px 4px;
+}
+
+.multiselect .multiselect_selected-options .multiselect_selected-options-icon:hover{
+    color: rgb(222, 53, 11);
+    background-color: rgb(255, 189, 173);
+}
+
+
+.multiselect .multiselect_selection-icons-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.multiselect .multiselect_selection-icons-wrapper span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
